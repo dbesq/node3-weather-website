@@ -64,7 +64,7 @@ app.get('/weather', (req, res) => {
                     return res.send({ error })
                 }
                 res.send({
-                    forecast: forecastData.summary + ' It is currently ' + forecastData.temperature + ' degrees out. There is a ' + forecastData.precipProbability + ' chance of rain.',
+                    forecast: forecastData.summary + ' It is currently ' + forecastData.temperature + ' degrees out. There is a ' + forecastData.precipProbability + ' chance of rain. The humidity is ' + forecastData.humidity + '.',
                     location,
                     address: req.query.address
                  })

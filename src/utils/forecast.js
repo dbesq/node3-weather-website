@@ -13,6 +13,7 @@ const forecast = (latitude, longitude, callback) => {
                 summary: body.daily.data[0].summary,
                 temperature: body.currently.temperature,
                 precipProbability: body.currently.precipProbability,
+                humidity: body.currently.humidity
             })
         }
     })
